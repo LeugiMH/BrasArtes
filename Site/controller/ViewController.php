@@ -8,7 +8,7 @@ class ViewController
     }
     function abrirPaginaNaoEncontrada()
     {
-        include_once "view/paginanaoencontrada.php";
+        include_once "view/PaginaNaoEncontrada.php";
     }
 
 }
