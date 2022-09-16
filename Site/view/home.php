@@ -5,16 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BrasArtes - home</title>
+
     <?php
     //Include head padrão
+    include_once "headPadrao.php";
 
     ?>
 </head>
 <body>
-aaaaaaa
+    <a href="#" class="bg-primary">aaaaa</a>
 
     <?php
     //include body padrão
+    include_once "bodyPadrao.php";
+    
     ?>
 </body>
 </html>
