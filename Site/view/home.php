@@ -16,11 +16,16 @@
         height: 20rem;
         object-fit: cover;
     }
-    .carousel-img{
+    .carousel-home-img{
         object-fit: cover;
         max-height: 100vh;
         width: 100%;
         height: 1000px;
+    }
+    .carousel-products-img{
+        object-fit: cover;
+        height:350px;
+        border-radius: 5px;
     }
     .tr-contatos{
         height: 4rem;
@@ -42,25 +47,25 @@
     </div>
     <div class="carousel-inner">
         <div class="carousel-item active" data-bs-interval="7000">
-        <img src="<?php echo URL.'/recursos/imagens/Cozinha-Carousel.jpg'?>" class="carousel-img d-block" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-            <h5>Cozinha otimizada</h5>
-            <p>Do seu jeito com um estilo próprio</p>
-        </div>
-        </div>
-        <div class="carousel-item" data-bs-interval="7000">
-        <img src="<?php echo URL.'/recursos/imagens/Estante-Carousel.jpg'?>" class="carousel-img d-block" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-            <h5>Estante decorativa</h5>
-            <p>No formato certo para cada gosto</p>
-        </div>
+            <img src="<?php echo URL.'/recursos/imagens/Cozinha-Carousel.jpg'?>" class="carousel-home-img d-block" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Cozinha otimizada</h5>
+                <p>Do seu jeito com um estilo próprio</p>
+            </div>
         </div>
         <div class="carousel-item" data-bs-interval="7000">
-        <img src="<?php echo URL.'/recursos/imagens/Quarto-Carousel.jpg'?>" class="carousel-img d-block" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-            <h5>Quarto customizado</h5>
-            <p>Utilização de espaço eficiente</p>
+            <img src="<?php echo URL.'/recursos/imagens/Estante-Carousel.jpg'?>" class="carousel-home-img d-block" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Estante decorativa</h5>
+                <p>No formato certo para cada gosto</p>
+            </div>
         </div>
+        <div class="carousel-item" data-bs-interval="7000">
+            <img src="<?php echo URL.'/recursos/imagens/Quarto-Carousel.jpg'?>" class="carousel-home-img d-block" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Quarto customizado</h5>
+                <p>Utilização de espaço eficiente</p>
+            </div>
         </div>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carousel-Home" data-bs-slide="prev">
@@ -91,35 +96,116 @@
 <div class="container-fluid p-0 py-5 py-lg-6">
     <div class="container col-md-8 px-3">
         <h1 class="display-5 fw-bold text-center">
-            Utensílios 
+            Um pouco do que fazemos
         </h1>
         <p class="lead mx-auto text-center">
-            Tábuas de corte de madeira em marchetaria
+            Trabalhos de madeira em marchetaria
         </p>
     </div>
     <div class="row mt-4 mt-xl-6 w-100 m-0">
         <div class="col-xl-4 mt-4 mt-xl-0">
-            <div class="col-xl-4 card mx-auto" style="width:90%;">
-                <img src="<?php echo URL.'/recursos/imagens/Tabua-Claudiao.jpg'?>" class="card-img-top img" alt="...">
-                <div class="card-body">
-                    <p class="card-text fs-5 text-center">Desenho personalizado em diferentes tons de madeira</p>
+            <div class="col-xl-4 mx-auto carousel slide" id="carousel2" data-bs-ride="carousel" style="width:90%;">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="<?php echo URL.'/recursos/imagens/Tabua-Claudiao.jpg'?>" class="d-block w-100 carousel-products-img">
+                        <div class=" d-md-block">
+                            <h5 class="text-center  ">Tábua de corte</h5>
+                            <p class="text-center   ">Desenho personalizado em diferentes tons de madeira</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="<?php echo URL.'/recursos/imagens/Tabua-Claudiao 2.jpg'?>" class="d-block w-100 carousel-products-img">
+                        <div class=" d-md-block">
+                            <h5 class="text-center  ">Tábua de corte</h5>
+                            <p class="text-center   ">Canal próximo a borda, enviando o escoamento de líquidos</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="<?php echo URL.'/recursos/imagens/Tabua-Claudiao 3.jpg'?>" class="d-block w-100 carousel-products-img">
+                        <div class=" d-md-block">
+                            <h5 class="text-center  ">Tábua de corte</h5>
+                            <p class="text-center   ">Com a sua logo em madeira nobre e de alta qualidade</p>
+                        </div>
+                    </div>
                 </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel2" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel2" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>        
         </div>
         <div class="col-xl-4 mt-4 mt-xl-0">
-            <div class="col-lg-4 card mx-auto" style="width:90%;">
-                <img src="<?php echo URL.'/recursos/imagens/Tabua-Claudiao 2.jpg'?>" class="card-img-top img" alt="...">
-                <div class="card-body">
-                    <p class="card-text fs-5 text-center">Canal próximo a borda, enviando o escoamento de líquidos</p>
+            <div class="col-xl-4 mx-auto carousel slide" id="carousel1" data-bs-ride="carousel" style="width:90%;">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="<?php echo URL.'/recursos/imagens/Tabua-Mi.jpg'?>" class="d-block w-100 carousel-products-img" alt="...">
+                        <div class=" d-md-block">
+                            <h5 class="text-center  ">Tábua de corte</h5>
+                            <p class="text-center   ">Perfeito para uma pessoa especial</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="<?php echo URL.'/recursos/imagens/Tabua-Mi1.jpg'?>" class="d-block w-100 carousel-products-img" alt="...">
+                        <div class=" d-md-block">
+                            <h5 class="text-center  ">Tábua de corte</h5>
+                            <p class="text-center   ">Bordas refinadas de madeira de qualidade</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="<?php echo URL.'/recursos/imagens/Tabua-Mi2.jpg'?>" class="d-block w-100 carousel-products-img" alt="...">
+                        <div class=" d-md-block">
+                            <h5 class="text-center  ">Tábua de corte</h5>
+                            <p class="text-center   ">Detalhes em alta qualidade</p>
+                        </div>
+                    </div>
                 </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel1" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel1" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>        
         </div>
         <div class="col-xl-4 mt-4 mt-xl-0">
-            <div class="col-lg-4 card mx-auto" style="width:90%;">
-                <img src="<?php echo URL.'/recursos/imagens/Tabua-Claudiao 3.jpg'?>" class="card-img-top img" alt="...">
-                <div class="card-body">
-                    <p class="card-text fs-5 text-center">Com a sua logo em madeira nobre e de alta qualidade</p>
+            <div class="col-xl-4 mx-auto carousel slide" id="carousel3" data-bs-ride="carousel" style="width:90%;">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="<?php echo URL.'/recursos/imagens/Tabua-Mi.jpg'?>" class="d-block w-100 carousel-products-img" alt="...">
+                        <div class=" d-md-block">
+                            <h5 class="text-center  ">Tábua de corte</h5>
+                            <p class="text-center   ">Desenho personalizado em diferentes tons de madeira</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="<?php echo URL.'/recursos/imagens/Tabua-Mi1.jpg'?>" class="d-block w-100 carousel-products-img" alt="...">
+                        <div class=" d-md-block">
+                            <h5 class="text-center  ">Tábua de corte</h5>
+                            <p class="text-center   ">Canal próximo a borda, enviando o escoamento de líquidos</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="<?php echo URL.'/recursos/imagens/Tabua-Mi2.jpg'?>" class="d-block w-100 carousel-products-img" alt="...">
+                        <div class=" d-md-block">
+                            <h5 class="text-center  ">Tábua de corte</h5>
+                            <p class="text-center   ">Com a sua logo em madeira nobre e de alta qualidade</p>
+                        </div>
+                    </div>
                 </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel3" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel3" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>        
         </div>
     </div> 
