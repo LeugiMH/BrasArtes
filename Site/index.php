@@ -2,7 +2,7 @@
     //Incluir Controllers
     include_once "controller/ViewController.php";
 
-    define("URL","http://192.168.15.15/Brasartes/Site");
+    define("URL","http://localhost/Brasartes/Site");
     if($_GET)
     {
         //Caso tenha URL
